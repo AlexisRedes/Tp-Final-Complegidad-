@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace DeepSpace
@@ -41,6 +42,8 @@ namespace DeepSpace
 		public int nivel(T dato) {
 			return 0;
 		}
+		
+		
 	
 	}
 }

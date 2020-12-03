@@ -1,0 +1,6 @@
+C:\Users\54116\Desktop\facu\Estructura de Algoritmos\tp-final\obj\Debug\netcoreapp3.1\tp-final.csprojAssemblyReference.cache
+C:\Users\54116\Desktop\facu\Estructura de Algoritmos\tp-final\obj\Debug\netcoreapp3.1\DeepSpace.Form1.resources
+C:\Users\54116\Desktop\facu\Estructura de Algoritmos\tp-final\obj\Debug\netcoreapp3.1\tp-final.csproj.GenerateResource.cache
+C:\Users\54116\Desktop\facu\Estructura de Algoritmos\tp-final\obj\Debug\netcoreapp3.1\tp-final.AssemblyInfoInputs.cache
+C:\Users\54116\Desktop\facu\Estructura de Algoritmos\tp-final\obj\Debug\netcoreapp3.1\tp-final.AssemblyInfo.cs
+C:\Users\54116\Desktop\facu\Estructura de Algoritmos\tp-final\obj\Debug\netcoreapp3.1\tp-final.csproj.CoreCompileInputs.cache
