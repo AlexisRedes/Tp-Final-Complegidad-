@@ -18,6 +18,8 @@ namespace DeepSpace
             {
                 GameScene gamescene = (GameScene)game.scene;
                 Movimiento ataque = this.est.CalcularMovimiento(game.scene.arbolDePlanetas);
+				if (ataque == null)
+					return;
                 if(ataque!=null)
                     gamescene.SendFleet(ataque.origen, ataque.destino);
                 acc -= 5;

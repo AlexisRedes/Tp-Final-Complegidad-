@@ -11,7 +11,12 @@ namespace DeepSpace
 		
 		public String Consulta1( ArbolGeneral<Planeta> arbol)
 		{
-			return "Implementar";
+			ArrayList list = new ArrayList();
+			list = preordenCaminoIA(list, arbol);
+			int distancia = list.Count-2;
+			string dist = distancia.ToString();
+			
+			return "La distancia desde la raiz hasta el nodo mas cercano a la IA es: "+dist;
 		}
 
 
@@ -43,7 +48,27 @@ namespace DeepSpace
 
 		public String Consulta3( ArbolGeneral<Planeta> arbol)
 		{
-			return ".";
+			Cola<ArbolGeneral<Planeta>> q = new Cola<ArbolGeneral<Planeta>>();
+            q.encolar(arbol);
+            int nivel = 0;
+            String mensaje = "";
+            while (!q.esVacia()){
+            	int elementos = q.cantElementos();
+                nivel++;
+                int cantidad =0;
+                int total = 0;
+                while (elementos-- > 0){
+                    ArbolGeneral<Planeta> nodoActual = q.desencolar();
+                   	total = total + nodoActual.getDatoRaiz().Poblacion();
+                   	cantidad++;
+                    foreach(ArbolGeneral<Planeta> hijo in nodoActual.getHijos()){
+                        q.encolar(hijo);
+                    }
+                }
+                double promedio = total/cantidad;
+                mensaje +="\n"+"\n"+"\n"+ "Nivel " + nivel + ": "+promedio+"\n";
+            }
+            return mensaje;
 		}
 		
 		public Movimiento CalcularMovimiento(ArbolGeneral<Planeta> arbol)
