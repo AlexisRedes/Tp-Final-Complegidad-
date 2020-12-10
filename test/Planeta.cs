@@ -27,16 +27,6 @@ namespace DeepSpace
             this.planetRenderer = new PlanetRenderer(this);
         }
 
-        public Planeta(Game game, Vector2 position, uint size, int team, uint population)
-            : base(game)
-        {
-            this.position = position;
-            this.size = size;
-            this.population = population;
-            this.team = team;
-            this.acc = 0;
-            this.planetRenderer = new PlanetRenderer(this);
-        }
 
         public override void Update(float delta)
         {

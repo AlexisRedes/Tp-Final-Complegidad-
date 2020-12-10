@@ -13,7 +13,7 @@ namespace DeepSpace
 		{
 			ArrayList list = new ArrayList();
 			list = preordenCaminoIA(list, arbol);
-			int distancia = list.Count-2;
+			int distancia = list.Count-1;
 			string dist = distancia.ToString();
 			
 			return "La distancia desde la raiz hasta el nodo mas cercano a la IA es: "+dist;
